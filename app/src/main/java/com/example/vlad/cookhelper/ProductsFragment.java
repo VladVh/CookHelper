@@ -210,7 +210,10 @@ public class ProductsFragment extends Fragment implements LoaderManager.LoaderCa
                         tableware = "чайных ложек";
                         break;
                 }
-
+                if (tablewareSize == -1) {
+                    Toast.makeText(getContext(), "Выберите существующую ёмкость для этого продукта", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 Intent intent = new Intent(getContext(), TablewareToGramsActivity.class);
                 intent.putExtra(TablewareToGramsActivity.COUNT, count);
                 intent.putExtra(TablewareToGramsActivity.TABLEWARE_SIZE, tablewareSize);
