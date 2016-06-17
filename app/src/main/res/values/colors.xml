@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <color name="colorPrimary">#e3910d</color>
+    <color name="colorPrimaryDark">#e3910d</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backgroundPrimary">#ffff33</color>
+    <color name="colorText">#000000</color>
+
+    <color name="spinnerDropDownColor">#e3910d</color>
+    <color name="state_pressed">#e7b360</color>
+</resources>

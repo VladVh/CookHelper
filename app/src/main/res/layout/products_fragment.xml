@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_gravity="center_horizontal" />
+    <!--android:background="@android:drawable/btn_default"-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/colorText"
+            android:ems="2"
+            android:maxLength="8"
+            android:imeOptions="actionDone"
+            android:id="@+id/inputGrams"
+            android:layout_weight="1" />
+        <!--android:background="@drawable/apptheme_textfield_activated_holo_light"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/grams"
+            android:id="@+id/textView5"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            />
+        <!--android:background="@drawable/buttonshape"-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/glass"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:id="@+id/labelGlass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faceted_glass"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:id="@+id/labelFacetedGlass" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tablespoon"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:id="@+id/labelTableSpoon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teaspoon"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="10dp"
+                android:id="@+id/labelTeaSpoon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:padding="10dp"
+                android:id="@+id/glass_textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:padding="10dp"
+                android:id="@+id/fglass_textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:padding="10dp"
+                android:id="@+id/tablespoon_textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:padding="10dp"
+                android:id="@+id/teaspoon_textView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorText"
+            android:ems="4"
+            android:maxLength="4"
+            android:layout_weight="1"
+            android:id="@+id/inputTablewareCount"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablewareSpinner"
+            android:layout_weight="1"/>
+            <!--style="@style/Widget.AppCompat.Spinner.Underlined" />-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transfer"
+            android:id="@+id/transfer_button"/>
+        <!--android:background="@drawable/buttonshape"-->
+    </LinearLayout>
+
+</LinearLayout>

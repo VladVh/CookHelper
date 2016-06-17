@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CookHelper</string>
+    <string name="content_authority">com.example.vlad.cookhelper</string>
+
+    <string name="glass">Стакан: </string>
+    <string name="faceted_glass">Граненый стакан: </string>
+    <string name="tablespoon">Столовая ложка: </string>
+    <string name="teaspoon">Чайная ложка: </string>
+    <string name="grams">грамм</string>
+    <string name="calculate">Рассчитать</string>
+    <string name="transfer">Перевести</string>
+
+    <string name="calc_glass">Стаканов: </string>
+    <string name="calc_faceted_glass">Граненых стаканов: </string>
+    <string name="calc_tablespoon">Столовых ложек: </string>
+    <string name="calc_teaspoon">Чайных ложек: </string>
+
+    <string name="title_activity_tableware_to_grams">TablewareToGramsActivity</string>
+
+</resources>
